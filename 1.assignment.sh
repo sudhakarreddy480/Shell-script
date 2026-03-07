@@ -19,8 +19,8 @@ else
     echo "$FILE not exist in path $PATH"
 fi
 
-if [ -r -w /$PATH/$FILE ] ; then
-    echo " $FILE is readable and writable "
+if [ -r /$PATH/$FILE ] ; then
+    echo " $FILE is readable "
 else
-    echo " not readable and writable"
+    echo " not readable"
 fi
