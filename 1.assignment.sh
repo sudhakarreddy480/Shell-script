@@ -24,3 +24,8 @@ if [ -r /$PATH/$FILE ] ; then
 else
     echo " not readable"
 fi
+if [ -w /$PATH/$FILE ] ; then
+    echo " $FILE is writable "
+else
+    echo " $FILE not writable"
+fi
