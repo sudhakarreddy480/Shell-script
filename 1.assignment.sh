@@ -9,7 +9,7 @@ if [ -d $PATH ] ; then
     echo " $PATH exist now checking for File"
 else
     echo " $PATH not exist"
-    echo 1
+    exit 1
 fi
 
 #check for file exist
