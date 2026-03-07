@@ -8,7 +8,7 @@ PATH=$2
 if [ -d $PATH ] ; then
     echo " $PATH exist now checking for File"
 else
-    echo " $PATH not exist"
+    echo " $PATH not exist. Please check and provide correct path"
     exit 1
 fi
 
@@ -17,4 +17,10 @@ if [ -f  /$PATH/$FILE ] ; then
    echo "$FILE exists in path $PATH"
 else
     echo "$FILE not exist in path $PATH"
+fi
+
+if [ -r -w /$PATH/$FILE ] ; then
+    echo " $FILE is readable and writable "
+else
+    echo " not readable and writable"
 fi
