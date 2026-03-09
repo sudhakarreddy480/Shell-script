@@ -12,13 +12,14 @@ if [ -f $FILE ] ; then
 else
     echo " $FILE not exists, provide correct file name "
     exit 1
-
+fi
 
 if [ -r $FILE ] ; then
     echo " $FILE have read perimission "
 else
     echo " $FILE don't have read permission "
     exit 1
+fi
 
 LCOUNT= $(cat $FILE | wc -l )
 WCOUNT= $(cat $FILE | wc -w )
