@@ -21,9 +21,9 @@ else
     exit 1
 fi
 
-LCOUNT= $(cat $FILE | wc -l )
-WCOUNT= $(cat $FILE | wc -w )
-C_COUNT= $(cat $FILE | wc -c )
+LCOUNT=$(cat $FILE) # | wc -l)
+WCOUNT=$(cat $FILE | wc -w)
+C_COUNT=$(cat $FILE | wc -c)
 
 echo "$FILE  Line count is $LCOUNT"
 echo "$FILE  Word count is $WCOUNT"
