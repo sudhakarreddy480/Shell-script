@@ -21,7 +21,7 @@ else
     exit 1
 fi
 
-LCOUNT=$(cat $FILE) | wc -l)
+LCOUNT=$(cat $FILE | wc -l)
 WCOUNT=$(cat $FILE | wc -w)
 C_COUNT=$(cat $FILE | wc -c)
 
