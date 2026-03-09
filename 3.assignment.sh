@@ -18,7 +18,7 @@ fi
 C_FILES=$(find $DIR_NAME -name "*.conf")
 while read -r line;do
     echo $line
-    RENAME+=$(sed -i 's/sudha/Anitha\'$'\n''/g' $line )
+    RENAME=$(sed -i 's/sudha/Anitha\'$'\n''/g' $line )
     echo -e $RENAME
 done <<< $C_FILES
 
