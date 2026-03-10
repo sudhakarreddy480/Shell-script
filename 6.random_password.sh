@@ -19,3 +19,6 @@ export LC_CTYPE=C
 password=$(< /dev/urandom tr -dc 'a-zA-Z0-9!@#$%^&*()_+=' | head -c "$PASS_LENGTH")
 
 echo "Generated Password: $password"
+
+##another way, one line command.
+#tr -dc 'A-Za-z0-9_!@#$%^&*-+' < /dev/urandom | head -c $PASS_LENGTH; echo
