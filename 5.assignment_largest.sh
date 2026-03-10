@@ -8,7 +8,7 @@
 
 #check for any arguments provided or not
 
-if [ $@ -eq 0 ];then
+if [ $# -eq 0 ];then
     echo "no arguments provided"
     exit 1
 else
@@ -24,4 +24,4 @@ for i in "$@";do
     fi
 done
 
-echo " largest number is $max_num "
+echo " largest number is $max_num "s
