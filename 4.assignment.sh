@@ -21,7 +21,7 @@ Validate(){
     if [ $1 != 0 ];then
         echo "validation failed and error log not captured."
     else
-        echo " Error log captured saved in location /tmp/ERROR_Log "s
+        echo " Error log captured saved in location /tmp/ERROR_Log "
     fi
 }
 cat $FILE |grep -i error >> /tmp/ERROR_Log
