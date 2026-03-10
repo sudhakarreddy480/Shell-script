@@ -20,6 +20,6 @@ while read -r line;do
     echo $line
     RENAME=$(sed -i 's/Anitha/sudha/g' $line )
     cat $line
-done <<< $C_FILES
+done <<< $C_FILESss
 
-#echo -e $RENAMEs
+#echo -e $RENAME
