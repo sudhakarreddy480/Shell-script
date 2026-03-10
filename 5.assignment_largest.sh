@@ -24,4 +24,4 @@ for i in "$@";do
     fi
 done
 
-echo " largest number is $max_num "s
+echo " largest number is $max_num "
