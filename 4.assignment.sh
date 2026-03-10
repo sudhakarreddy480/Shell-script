@@ -26,4 +26,4 @@ Validate(){
 }
 cat $FILE |grep -i error >> /tmp/ERROR_Log
 CHECK=$(echo $?)
-validate $CHECK
+Validate $CHECK
